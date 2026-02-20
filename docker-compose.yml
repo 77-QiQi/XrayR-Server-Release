@@ -1,0 +1,7 @@
+services:
+  xrayr-server:
+    image: loveganyu/xrayr-server:latest
+    restart: always
+    network_mode: host
+    volumes:
+      - ./config:/etc/XrayR-Server/
